@@ -1,0 +1,16 @@
+{
+    "name": "rdhdev/stndresponse",
+    "description": "Standard Response",
+    "autoload": {
+        "psr-4": {
+            "Rdhdev\\StndResponse\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ridho pangestu",
+            "email": "ridho.pangestu@majoo.id"
+        }
+    ],
+    "require": {}
+}
