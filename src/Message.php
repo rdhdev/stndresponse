@@ -10,5 +10,5 @@ class Message
     const UNATHORIZED      = "Unauthorized";
     const FORBIDDEN        = "You don`t have access";
     const NOT_FOUND        = "route not found!";
-    const UNKNOWN          = "Somethin Wrong";
+    const UNKNOWN          = "Something Wrong";
 }
