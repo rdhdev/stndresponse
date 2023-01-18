@@ -30,14 +30,14 @@ class Response
     {
         $response = $this->templateResponse(Message::SUCESS, StatusCode::HTTP_OK, $data);
 
-        return json_encode($response);
+        return $response;
     }
 
     public function created()
     {
         $response = $this->templateResponse(Message::CREATED, StatusCode::HTTP_CREATED);
 
-        return json_encode($response);
+        return $response;
 
     }
 
@@ -56,7 +56,7 @@ class Response
         $error = $this->responseErrorGenerator($validator);
         $response = $this->templateResponse(Message::BAD_REQUEST, StatusCode::HTTP_BAD_REQUEST, null, $error);
 
-        return json_encode($response);
+        return $response;
     }
 
     public function internalServerErrorResponse($message = null)
@@ -64,20 +64,20 @@ class Response
         $message = $message ?? Message::UNKNOWN;
         $response = $this->templateResponse($message, StatusCode::HTTP_INTERNAL_SERVER_ERROR);
 
-        return json_encode($response);
+        return $response;
     }
 
     public function unathorized()
     {
         $response = $this->templateResponse(Message::UNATHORIZED, StatusCode::HTTP_UNATHORIZED);
 
-        return json_encode($response);
+        return $response;
     }
 
     public function notFound()
     {
         $response = $this->templateResponse(Message::NOT_FOUND, StatusCode::HTTP_NOT_FOUND);
 
-        return json_encode($response);
+        return $response;
     }
 }
