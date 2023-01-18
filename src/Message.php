@@ -4,7 +4,7 @@ namespace Rdhdev\StndResponse;
 
 class Message 
 {
-    const SUCESS           = "Successfully get data";
+    const SUCESS           = "Success";
     const CREATED          = "Succcess Created!";
     const BAD_REQUEST      = "Bad Request";
     const UNATHORIZED      = "Unauthorized";
